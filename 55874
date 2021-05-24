@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shahin allam</title>
+<style type="text/css">
+
+*{
+
+	margin:0px;
+	padding:0px;
+	font-family:'Ubuntu', sans-serif;
+}
+
+body{
+
+	font-size:2px;
+}
+
+
+a{
+	
+	text-decoration:none;
+}
+
+.container{
+
+	width:330px;
+	padding-left:10px;
+	padding-right:10px;
+	margin:auto;
+}
+
+.wrapper{
+
+	overflow:hidden;
+}
+
+.navBar{
+
+	background:crimson;
+	padding:5px;
+}
+
+.logo a{
+	
+	font-size:17px;
+	color:#fff;
+	font-weight:500;
+	float:left;	
+}
+
+.menu ul{
+
+	list-style:none;
+	float:right;	
+}
+
+.menu ul li{
+
+	display:inline-block;
+	padding:5px 0px;
+	margin-left:5px;
+}
+
+.menu ul li a{
+
+	font-size:9.5px;
+	color:#fff;	
+}
+
+
+.heroArea{
+
+	background:url(shahin/24.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	height:200px;
+	position:relative;
+	z-index:1;
+}
+
+.heroArea::after{
+
+	content:'';
+	width:100%;
+	height:100%;
+	background:black;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	opacity:.0;
+	z-index:-1;
+}
+
+
+.content{
+
+	color:#fff;
+	margin-top:20%;
+}
+
+.content p{
+
+	font-size:10px;
+	font-weight:500;
+}
+
+.content h1{
+	
+	font-size:17px;
+	padding:2px 0px;
+	font-weight:700;
+}
+
+.content h2{
+	
+	font-size:15px;
+	padding-bottom:10px;
+	font-weight:500;
+}
+
+.content h2 span{
+	
+	color:crimson;
+	font-weight:900;
+
+}
+
+.content .btn{
+	
+	background:crimson;
+	border:1px solid crimson;
+	outline:none;
+	padding:5px 8px;
+	color:#fff;
+	font-size:12px;
+	border-radius:3px;
+	font-weight:500;
+	transition:.5s ease;
+}
+
+.content .btn:hover{
+
+	background:transparent;	
+	color:crimson;
+}
+
+
+.socialIcons{
+
+	width:120px;
+	float:right;
+	margin-top:2%;
+	margin-right:30%;
+}
+
+.socialIcons img{
+
+	width:17px;
+	background:crimson;
+	border-radius:100%;
+	padding:4px;
+	float:left;
+	margin:0px 5px;
+	transition:0.3s ease;
+	
+}
+
+.socialIcons .fb:hover img{
+
+	background:#1877f2;
+	transform:translateY(-10px)
+}
+
+.socialIcons .twitter:hover img{
+
+	background:#08a0e9;
+	transform:translateY(-10px)
+}
+
+.socialIcons .linkedin:hover img{
+
+	background:#0077B5;
+	transform:translateY(-10px)
+}
+
+
+#aboutMe{
+	
+	background:#f6f5f5;
+	padding:20px 0px;
+}
+
+.secTitle1{
+
+	text-align:center;
+	padding-bottom:15px;
+	position:relative;
+}
+
+.secTitle1 h1{
+
+	font-size:16px;
+	padding-bottom:2px;
+}
+
+.secTitle1 p{
+
+	color:crimson;
+	font-size:9px;
+	font-weight:600;
+}
+
+.secTitle1::after{
+
+	content:'';
+	width:4%;
+	height:1.5px;
+	background:black;
+	position:absolute;
+	left:40%;
+	bottom:19px;	
+}
+
+.secTitle1::before{
+
+	content:'';
+	width:4%;
+	height:1.5px;
+	background:black;
+	position:absolute;
+	left:56%;
+	bottom:19px;	
+}
+
+
+.myImg{
+
+	width:140px;
+	float:left;
+	margin-right:10px;
+}
+
+.myImg img{
+
+	width:100%;
+	height:auto;
+	border-radius:3px;
+	
+}
+
+.myDetailes{
+
+	width:165px;
+	float:right;
+	padding:10px 0px;
+}
+
+.myDetailes h1{
+
+	font-size:12px;
+	
+}
+
+.myDetailes h1 span{
+
+	color:crimson;
+	font-weight:800;
+}
+
+
+.myDetailes p{
+	
+	font-size:8.5px;
+	line-height:12px;
+	padding:6px 0px;
+}
+
+.myDetailes .btn{
+	
+	margin-top:5px;
+	background:crimson;
+	border:1px solid crimson;
+	outline:none;
+	font-size:11px;
+	padding:6px 10px;
+	color:#fff;
+	border-radius:3px;
+	transition:.3s ease;
+	font-weight:500;
+}
+
+.myDetailes .btn:hover{
+
+	background:#fff;
+	color:crimson;
+}
+
+.secTitle2{
+
+	text-align:center;
+	padding-bottom:15px;
+	position:relative;
+	color:#fff;
+}
+
+.secTitle2 h1{
+
+	font-size:16px;
+	padding-bottom:2px;
+}
+
+.secTitle2 p{
+
+	color:crimson;
+	font-size:9px;
+	font-weight:600;
+}
+
+.secTitle2::after{
+
+	content:'';
+	width:3%;
+	height:1.5px;
+	background:#fff;
+	position:absolute;
+	left:38%;
+	bottom:19px;	
+}
+
+.secTitle2::before{
+
+	content:'';
+	width:3%;
+	height:1.5px;
+	background:#fff;
+	position:absolute;
+	left:59%;
+	bottom:19px;	
+}
+
+
+#myServices{
+
+	background:black;
+	padding:20px 0px;
+}
+
+.singleService{
+
+	width:95px;
+	float:left;
+	color:#fff;
+	margin-right:10px;
+	background:#1B1B1B;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:4px;
+	padding-right:4px;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	transition:.5s ease;
+	border-radius:3px;
+
+}
+
+.singleService:last-child{
+
+
+	margin-right:0px;
+}
+
+.singleService .icon{
+
+	font-size:20px;
+	padding-bottom:10px;
+	height:25px;
+}
+
+.singleService:last-child .icon{
+
+	color:crimson;
+	font-weight:800;
+	transition:0.5s ease;
+}
+
+.singleService h1{
+
+	font-size:11px;
+	padding-bottom:5px;
+}
+
+.singleService p{
+
+	line-height:12px;
+}
+
+.singleService:hover{
+	
+    transform:translateY(-15px);
+    background:crimson;
+}
+
+.active{
+
+	background:crimson;
+}
+.singleService:hover:last-child .icon{
+
+
+	color:#fff;
+}
+
+
+.secTitle3{
+
+	text-align:center;
+	padding-bottom:15px;
+	position:relative;
+}
+
+.secTitle3 h1{
+
+	font-size:16px;
+	padding-bottom:2px;
+}
+
+.secTitle3 p{
+
+	color:crimson;
+	font-size:9px;
+	font-weight:600;
+}
+
+.secTitle3::after{
+
+	content:'';
+	width:3%;
+	height:1.5px;
+	background:black;
+	position:absolute;
+	left:38%;
+	bottom:19px;	
+}
+
+.secTitle3::before{
+
+	content:'';
+	width:3%;
+	height:1.5px;
+	background:black;
+	position:absolute;
+	left:59%;
+	bottom:19px;	
+}
+
+#mySkills{
+
+	padding:20px 0px;
+	background:#f6f5f5;
+	box-sizing:border-box;
+}
+
+.skillsDesc{
+
+	width:160px;
+	float:left;
+	margin-right:10px;
+	padding:8px 0px;
+}
+
+.skillsDesc h1{
+
+	font-size:10px;
+}
+
+.skillsDesc p{
+
+	padding:5px 0px;
+	line-height:12px;
+}
+
+.skillsDesc .btn{
+
+	background:crimson;
+	border:1px solid crimson;
+	padding:5px 10px;
+	font-size:12px;
+	color:#fff;
+	font-weight:500;
+	border-radius:3px;
+	outline:none;
+	transition:0.5s ease;
+}
+
+.skillsDesc .btn:hover{
+
+	background:#fff;
+	color:crimson;
+}
+
+.skillsRatings{
+
+	width:160px;
+	float:right;
+}
+
+.skillsRatings .info{
+
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+    margin-top:10px;
+
+}
+
+.line{
+
+	content:'';
+	width:100%;
+	height:2px;
+	background:lightgrey;
+	position:relative;
+}
+
+.line::after{
+
+	content:'';
+	width:100%;
+	height:2px;
+	background:crimson;
+	position:absolute;
+}
+
+.html::after{
+
+	width:90%;
+}
+
+.css::after{
+
+	width:90%;
+}
+
+.js::after{
+
+	width:60%;
+}
+
+.mysql::after{
+
+	width:80%;
+}
+
+.php::after{
+
+	width:90%;
+}
+
+#myTeams{
+
+	background:black;
+	padding:20px 0px;
+	box-sizing:border-box;
+}
+
+.secTitle4{
+
+	text-align:center;
+	padding-bottom:15px;
+	position:relative;
+	color:#fff;
+}
+
+.secTitle4 h1{
+
+	font-size:16px;
+	padding-bottom:2px;
+}
+
+.secTitle4 p{
+
+	color:crimson;
+	font-size:9px;
+	font-weight:600;
+}
+
+.secTitle4::after{
+
+	content:'';
+	width:3%;
+	height:1.5px;
+	background:#fff;
+	position:absolute;
+	left:39%;
+	bottom:19px;	
+}
+
+.secTitle4::before{
+
+	content:'';
+	width:3%;
+	height:1.5px;
+	background:#fff;
+	position:absolute;
+	left:58%;
+	bottom:19px;	
+}
+
+.singlePerson{
+
+	width:103px;
+	float:left;
+	padding:15px 0px;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-right:10px;
+	color:#fff;
+	text-align:center;
+	background:#1B1B1B;
+	border-radius:3px;
+	transition:.5s ease;
+}
+
+.singlePerson:last-child{
+
+	margin-right:0px;
+}
+
+
+.singlePerson .personImg img{
+
+	width:90%;
+	height:auto;
+	border-radius:100%;	
+	border:2px solid crimson;
+	transition:0.5s ease;
+}
+
+.singlePerson h1{
+
+	padding:5px;
+	font-size:11px;
+}
+
+.singlePerson p{
+
+	width:80px;
+	margin:auto;
+	line-height:12px;
+}
+
+.singlePerson:hover{
+
+	transform:translateY(-15px);
+	background:crimson;
+	
+}
+
+.singlePerson:hover img{
+
+	border:2px solid #fff;
+}
+
+.singlePerson:nth-child(2){
+
+	background:crimson;
+}
+
+.singlePerson:nth-child(2) img{
+
+	border:2px solid #fff;
+}
+
+#contactMe{
+
+
+	padding:20px 0px;
+	background:url(city/11.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:absolute;
+	height:auto;
+	position:relative;
+	z-index:1;
+}
+
+#contactMe::after{
+
+	content:'';
+	width:100%;
+	height:100%;
+	background:black;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	opacity:.5;
+	z-index:-1;
+}
+
+.secTitle5{
+
+	text-align:center;
+	padding-bottom:15px;
+	position:relative;
+}
+
+.secTitle5 h1{
+
+	font-size:16px;
+	padding-bottom:2px;
+	color:#fff;
+}
+
+.secTitle5 p{
+
+	color:crimson;
+	font-size:9px;
+	font-weight:600;
+}
+
+.secTitle5::after{
+
+	content:'';
+	width:4%;
+	height:1.5px;
+	background:#fff;
+	position:absolute;
+	left:38%;
+	bottom:19px;	
+}
+
+.secTitle5::before{
+
+	content:'';
+	width:4%;
+	height:1.5px;
+	background:#fff;
+	position:absolute;
+	left:58%;
+	bottom:19px;	
+}
+
+.contactBox{
+
+	width:230px;
+	margin:auto;
+	box-shadow:0px 0px 5px 3px black;
+	border-radius:20px;
+	padding:30px 10px;
+	transition:0.5s ease;
+}
+
+.contactBox:hover{
+
+	border:1.5px solid crimson;
+}
+
+
+.contactBox input , textarea {
+
+	width:220px;
+	margin-bottom:10px;
+	padding:10px 5px;
+	background:transparent;
+	outline:none;
+	border:none;
+	border-bottom:1px solid #fff;
+	color:#fff;
+	font-size:15px;
+	font-family:normal;
+	transition:0.3s ease;
+}
+
+.contactBox input::placeholder{
+
+	color:lightgrey;
+}
+
+
+.contactBox .textarea::placeholder{
+
+	color:lightgrey;
+}
+
+.contactBox input:focus::placeholder{
+
+	color:grey;
+	transition:0.2s ease;
+}
+
+
+.contactBox .textarea:focus::placeholder{
+
+	color:grey;
+	transition:.2s ease;
+}
+
+
+.contactBox input:hover{
+
+	border-bottom:1.5px solid crimson;
+
+}
+
+
+.contactBox .textarea:hover{
+
+	border-bottom:1.5px solid crimson;
+}
+
+
+.contactBox .btn{
+	
+	width:230px;
+	background:crimson;
+	border:1px solid crimson;
+	padding:8px 0px;
+	font-size:15px;
+	display:block;
+	color:#fff;
+	font-weight:500;
+	border-radius:3px;
+	outline:none;
+	transition:.2s ease;
+}
+
+
+.contactBox .btn:hover{
+
+	transform:scale(.97);
+}
+
+
+
+#contactInfo{
+
+	background:url(urban/bd.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	height:150px;
+	position:relative;
+	z-index:1;
+}
+
+#contactInfo::after{
+
+	content:'';
+	width:100%;
+	height:100%;
+	background:black;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	opacity:.7;
+	z-index:-1;
+}
+
+#footer{
+
+	background:black;
+	color:#fff;
+	padding:10px 0px;
+}
+
+#footer h1{
+
+	text-align:center;
+}
+
+#footer h1 span{
+
+	color:crimson;
+	font-weight:900;
+}
+
+</style>
+</head>
+<body>
+	<nav class="navBar">
+	<div class="container">
+	<div class="wrapper">
+	<div class="logo">
+	<a href="#" >Portfo<span>lio.</span></a>
+	</div>
+	<div class="menu">
+	<ul>
+	<li><a href="home.html" >Home</a></li>
+	<li><a href="about.html" >About</a></li>
+	<li><a href="service.html" >Services</a></li>
+	<li><a href="skills.html" >Skills</a></li>
+	<li><a href="teams.html" >Teams</a></li>
+	<li><a href="contact.html" >Contact</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</nav>
+	
+	<div class="heroArea">
+	<div class="container">
+	<div class="wrapper">
+	<div class="content">
+	<p>Hello , my name is</p>
+	<h1>Mohammad Shahin A</h1>
+	<h2>And I'm <span>Developer |</span></h2>
+	<button class="btn">Hire me</button>
+	</div>
+	<div class="socialIcons">
+	<div class="fb">
+	<img  src="icon/face-white.png">
+	</div>
+	<div class="twitter">
+	<img  src="icon/twitter.png">
+	</div>
+	<div class="linkedin">
+	<img  src="icon/linkedin.png">
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+ <section id="aboutMe">
+   <div class="secTitle1">
+     <h1>About me</h1>
+      <p>who i am</p>
+       </div>
+        <div class="container">
+          <div class="wrapper">
+            <div class="myImg">
+            <img src="urban/shahin.jpg">
+            </div>  
+            <div class="myDetailes">
+            <h1>I'm Shahin and i'm a <span>Designer |</span></h1>
+            <p>There are many variations of passages of 
+            Lorem Ipsum available, but the majority have 
+            suffered alteration in some form, by injected humour,
+            or randomised words which don't look even slightly believable.
+            </p>
+            <button class="btn">Download CV</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+   <section id="myServices">
+    <div class="secTitle2">
+      <h1>My services</h1>
+      <p>what i provied</p>
+      </div>   
+       <div class="container">
+        <div class="wrapper">
+         <div class="singleService">
+         <div class="icon">
+         🖌️
+         </div>
+         <h1>Web Design</h1>
+         <p>It is a long established 
+         fact that a reader will be 
+         distracted by the readable 
+         content of a page when looking 
+         at its layout.
+         </p>
+         </div>
+         <div class="singleService active">
+         <div class="icon">
+         📑️
+         </div>
+         <h1>Advertising</h1>
+         <p>It is a long established 
+         fact that a reader will be 
+         distracted by the readable 
+         content of a page when looking 
+         at its layout.
+         </p>
+         </div>
+         <div class="singleService">
+         <div class="icon">
+         <\>
+         </div>
+         <h1>App Development</h1>
+         <p>It is a long established 
+         fact that a reader will be 
+         distracted by the readable 
+         content of a page when looking 
+         at its layout.
+         </p>
+         </div>
+        </div>
+       </div>
+      </section>
+      
+  <section id="mySkills">
+   <div class="secTitle3">
+    <h1>My skills</h1>
+     <p>what i provied</p>
+      </div>      
+       <div class="container">
+        <div class="wrapper">
+         <div class="skillsDesc">
+         <h1>My creative skills & experiences.</h1>
+         <p id="para">It is a long established 
+         fact that a reader will be 
+         distracted by the readable 
+         content of It is a long established 
+         fact that a reader will be 
+         distracted by the readable 
+         content of a page when looking 
+         at its layout.</p>
+         <button class="btn" onclick="morePara()">Read more</button>
+         </div>
+         <div class="skillsRatings">
+         <div class="info">
+         <span>HTML</span>
+         <span>90%</span>
+         </div>
+         <div class="line html"></div>
+         <div class="info">
+         <span>CSS</span>
+         <span>60%</span>
+         </div>
+         <div class="line css"></div>
+         <div class="info">
+         <span>Javascript</span>
+         <span>80%</span>
+         </div>
+         <div class="line js"></div>
+         <div class="info">
+         <span>PHP</span>
+         <span>50%</span>
+         </div>
+         <div class="line php"></div>
+         <div class="info">
+         <span>mySQL</span>
+         <span>70%</span>
+         </div>
+         <div class="line mysql"></div>
+         </div>
+        </div>   
+       </div>
+      </section>
+      
+      <section id="myTeams">
+        <div class="secTitle4">
+        <h1>My teams</h1>
+        <p>who with me</p>
+        </div>
+        <div class="container">
+         <div class="wrapper">
+         <div class="singlePerson">
+         <div class="personImg">
+         <img src="urban/girl07.jpg">
+         </div>
+         <div class="personDetailes">
+         <h1>Feriha Noor</h1>
+         <p>Lorem ipsum doller its ameit
+         consectetor addipicing elit.
+         </p>
+         </div>
+         </div>
+         <div class="singlePerson active">
+         <div class="personImg">
+         <img src="urban/shahin.jpg">
+         </div>
+         <div class="personDetailes">
+         <h1>Shahin Allam</h1>
+         <p>Lorem ipsum doller its ameit
+         consectetor addipicing elit.
+         </p>
+         </div>
+         </div>
+         <div class="singlePerson">
+         <div class="personImg">
+         <img src="urban/girl04.jpg">
+         </div>
+         <div class="personDetailes">
+         <h1>Aiesha Allam</h1>
+         <p>Lorem ipsum doller its ameit
+         consectetor addipicing elit.
+         </p>
+         </div>
+         </div>
+         </div>
+        </div>
+      </section>
+      
+      <section id="contactMe">
+       <div class="secTitle5">
+       <h1>Contact me</h1>
+       <p>get in touch</p>
+       </div>
+       <div class="container">
+        <div class="wrapper">
+         <div class="contactBox">
+          <form>
+           <input type="text" placeholder="Full Name" required="required">
+           <input type="email" placeholder="Email" required="required">
+           <input type="text" placeholder="Subject" required="required">
+           <textarea class="textarea" rows="5" placeholder="Write your message..." required="required"></textarea>
+           <button class="btn">Send message</button>
+          </form>
+         </div>
+        </div>   
+       </div>
+      </section>
+      
+      <footer id="footer">
+      <div class="container">
+      <h1>Create By <span>Mohammad Shahin A </span>| © 2021 All rights reserved.</h1>
+      </div>
+      </footer>
+
+<script type="text/javascript">
+
+
+function morePara(){
+ 
+ document.querySelector("#para").innerHTML = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+
+}
+
+</script>
+</body>
+</html>
